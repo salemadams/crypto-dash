@@ -3,7 +3,7 @@ import { Chart as ChartJS} from "chart.js";
 import {useEffect, useState} from "react";
 import {Line} from "react-chartjs-2";
 import 'chartjs-adapter-date-fns';
-import Spinner from "./Spinner.tsx";
+import Spinner from "./Spinner.jsx";
 const API_URL = import.meta.env.VITE_COIN_API_URL;
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend, TimeScale);

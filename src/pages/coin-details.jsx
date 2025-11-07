@@ -1,7 +1,7 @@
 import {Link, useParams} from "react-router";
 import {useEffect, useState} from "react";
-import Spinner from "../components/Spinner.tsx";
-import CoinChart from "../components/CoinChart.tsx";
+import Spinner from "../components/Spinner.jsx";
+import CoinChart from "../components/CoinChart.jsx";
 
 const API_URL = import.meta.env.VITE_COIN_API_URL;
 

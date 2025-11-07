@@ -1,8 +1,8 @@
-import FilterInput from "../components/FilterInput.tsx";
-import LimitSelector from "../components/LimitSelector.tsx";
-import SortSelector from "../components/SortSelector.tsx";
-import CoinCard from "../components/CoinCard.tsx";
-import Spinner from "../components/Spinner.tsx";
+import FilterInput from "../components/FilterInput.jsx";
+import LimitSelector from "../components/LimitSelector.jsx";
+import SortSelector from "../components/SortSelector.jsx";
+import CoinCard from "../components/CoinCard.jsx";
+import Spinner from "../components/Spinner.jsx";
 
 function HomePage({ coins, filter, setFilter, limit, setLimit, sortBy, setSortBy, loading, error}) {
     const filteredCoins = coins.filter(coin => {

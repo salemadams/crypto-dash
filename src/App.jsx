@@ -1,15 +1,15 @@
 import {useEffect, useState} from "react";
 import {Route, Routes} from "react-router";
-import HomePage from "./pages/home.tsx";
-import AboutPage from "./pages/about.tsx";
-import Header from "./components/Header.tsx";
-import CoinDetailsPage from "./pages/coin-details.tsx";
-import NotFound from "./pages/not-found.tsx";
+import HomePage from "./pages/home.jsx";
+import AboutPage from "./pages/about.jsx";
+import Header from "./components/Header.jsx";
+import CoinDetailsPage from "./pages/coin-details.jsx";
+import NotFound from "./pages/not-found.jsx";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
 function App() {
-    const [coins, setCoins] = useState<[]>([]);
+    const [coins, setCoins] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [limit, setLimit] = useState(10);
